@@ -1,0 +1,374 @@
+body {
+	font: normal 10px/1.8em Arial, Helvetica, sans-serif;
+}
+h1 {
+	text-align:center;
+}
+hr {
+	margin:1.5em 0em;
+}
+/* -----------------------------------------
+		PadiCode Mobile Forms
+		----------------------------------------- */
+	/* firfox bugs */
+.padimobile:after, .padimobile div:after, .padimobile ol:after, .padimobile ul:after, .padimobile li:after, .padimobile dl:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	overflow:hidden;
+}
+/* Form Structure */
+	
+.padimobile {
+	margin:0;
+	padding:0;
+}
+.padimobile fieldset {
+	border: 1px solid #d4d4d4;
+	position: relative;
+	padding: 1.2em;
+	/*margin: 0 0 4em;*/
+	background:#fff;
+	/*corner*/
+    -moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.padimobile legend {
+	margin-left:1%;
+	margin-right:2%;
+	padding: 0.5% 1% 0.8%;
+}
+.padimobile h3 {
+	margin:2em 1% .8%;
+	padding: 0.5% 0.5% 0.8%;
+}
+/* legend and titles */
+	
+	.padimobile {
+	font: normal 10px/1.1em Arial, Helvetica, sans-serif;
+}
+.padimobile legend, .padimobile h3 {
+	font-size:2.8em;
+	line-height:1.2em;
+	letter-spacing: -.035em;
+	color:#2b2b2b;
+	font-weight: normal;
+}
+/* form elements  */
+	.padimobile label {
+	color:#2b2b2b;
+	font-size:1.4em;
+	line-height: 1.3em;
+	vertical-align:middle;
+	display: block;
+	height: auto;
+	margin: 0.2em 0 0.5em;
+}
+.padimobile input[type="text"], .padimobile textarea, .padimobile select {
+	vertical-align: middle;
+	line-height: 1.1em;
+	margin-bottom:1em;
+	width: 100%;
+	padding:10px;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*ie7*/
+	*width: 99%;
+	border-color:#c6c6c6 #dadada #eaeaea;
+	background: #fafafa;
+	color:#999;
+	font-size:1.4em;
+	font-family:inherit;
+	/*corner*/
+		-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.padimobile select {
+	border-color:#c6c6c6 #dadada #eaeaea;
+	background: #fafafa;
+	color:#999;
+	padding:9px;
+	height:2.7em;
+}
+.padimobile textarea {
+	height: 10em;
+}
+.padimobile .list label {
+	display: inline;
+	height: auto;
+	margin: 0.5em 0 0.8em 2px;
+}
+.padimobile input[type="text"]:hover, .padimobile textarea:hover, .padimobile select:hover {
+	color:#666;
+	background: #fff none;
+	border-color:#c6c6c6;
+}
+.padimobile input[type="text"]:focus, .padimobile textarea:focus, .padimobile select:focus {
+	color:#333;
+	background: #fff none;
+	border-color:#659ec9 #70aedd #a8cfec;
+	outline: 0;
+}
+/* form buttons */
+	.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	background: #00a6fc;
+	display: inline-block;
+	text-align: center;
+	padding: 9px 34px 11px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	margin: 0;
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.28);
+	border: 1px solid #0593dc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 18px;
+	padding: 11px 48px 13px;
+	width: auto;
+}
+/* Don't use native buttons on iOS */
+	.padimobile input[type=submit], .padimobile button {
+	-webkit-appearance: none;
+}
+	
+	/* Hide inner focus effect in Firefox */
+	.padimobile button::-moz-focus-inner, .padimobile input[type="reset"]::-moz-focus-inner, .padimobile input[type="button"]::-moz-focus-inner, .padimobile input[type="submit"]::-moz-focus-inner {
+ border: none;
+}
+.padimobile-button:hover, .padimobile input[type="submit"]:hover, .padimobile input[type="submit"]:focus, .padimobile input[type="button"]:hover, .padimobile input[type="button"]:focus, .padimobile input[type="reset"]:hover, .padimobile input[type="reset"]:focus {
+	background-color: #0192dd;
+	color: #fff;
+}
+	/* -------------------- MEDIA QUERIES -----------------------*/
+	/* Smartphones (portrait and landscape) ———– */
+	@media only screen  and (min-width : 320px)  and (max-width : 480px) {
+/* Styles */
+	.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	width: 100%;
+}
+}
+	/* Smartphones (landscape) ———– */
+	@media only screen  and (min-width : 321px)  and (max-width : 480px) {
+/* Styles */	
+	}
+	/* Smartphones (portrait) ———– */
+	@media only screen  and (max-width : 320px) {
+/* Styles */
+	.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	width: 100%;
+}
+}
+	/* iPads (portrait and landscape) ———– */
+	@media only screen  and (min-width : 768px)  and (max-width : 1024px) {
+/* Styles */
+	.padimobile {
+	max-width: 500px;
+	margin:0px auto;
+}
+.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	width: 70%;
+	margin:0 15%;
+}
+}
+	/* iPads (landscape) ———– */
+	@media only screen  and (min-width : 768px)  and (max-width : 1024px)  and (orientation : landscape) {
+/* Styles */
+	.padimobile {
+	max-width: 500px;
+	margin:0px auto;
+}
+.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	width: 70%;
+	margin:0 15%;
+}
+}
+	/* iPads (portrait) ———– */
+	@media only screen  and (min-width : 768px)  and (max-width : 1024px)  and (orientation : portrait) {
+/* Styles */
+	.padimobile {
+	max-width: 500px;
+	margin:0px auto;
+}
+.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	width: 70%;
+	margin:0 15%;
+}
+}
+	/* Desktops and laptops ———– */
+	@media only screen  and (min-width : 1224px) {
+/* Styles */
+	.padimobile {
+	max-width: 600px;
+	margin:0px auto;
+}
+}
+	/* Large screens ———– */
+	@media only screen  and (min-width : 1824px) {
+/* Styles */
+	.padimobile {
+	max-width: 600px;
+	margin:0px auto;
+}
+}
+	/* iPhone 4 ———– */
+	@media  only screen and (-webkit-min-device-pixel-ratio : 1.5),  only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+	.padimobile input[type="submit"], .padimobile input[type="button"], .padimobile input[type="reset"] {
+	width: 100%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+	footer .fright{
+		float: left;
+		padding: 0 0 0 40px;
+	}
+}
+
+/*==================== FOOTER ======================*/
+
+
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.zerogrid{ width: 960px; position: relative; margin: 0 auto; padding: 0px;}
+.zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.zerogrid .row{}
+.zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.zerogrid .row:after{clear: both; }
+.zerogrid .row{zoom: 1;}
+
+.zerogrid .wrap-col{margin:10px;}
+
+.zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{float:left; display: inline-block;}
+
+.zerogrid .col-full{width:100%;}
+
+.zerogrid .col-1-2{width:50%;}
+
+.zerogrid .col-1-3{width:33.33%;}
+.zerogrid .col-2-3{width:66.66%;}
+
+.zerogrid .col-1-4{width:25%;}
+.zerogrid .col-2-4{width:50%;}
+.zerogrid .col-3-4{width:75%;}
+
+.zerogrid .col-1-5{width:20%;}
+.zerogrid .col-2-5{width:40%;}
+.zerogrid .col-3-5{width:60%;}
+.zerogrid .col-4-5{width:80%;}
+
+.zerogrid .col-1-6{width:16.66%;}
+.zerogrid .col-2-6{width:33.33%;}
+.zerogrid .col-3-6{width:50%;}
+.zerogrid .col-4-6{width:66.66%;}
+.zerogrid .col-5-6{width:83.33%;}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.zerogrid{width:100%;}
+}
+
+@media only screen and (max-width: 767px) {
+	.zerogrid{width:100%;}
+}
+
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+	.zerogrid{width:100%;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 619px) {
+	.zerogrid{width:100%;}
+	.zerogrid .col-1-3, .zerogrid .col-2-3{width:100%;}
+	.zerogrid .col-1-4{width:50%;}
+	.zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{width:100%;}
+}
+
+@media only screen and (max-width: 479px) {
+	.zerogrid, .zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{width:100%;}
+}
+
+
+
+
+
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, 
+var{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+    vertical-align: top; }
+
+ol, ul {
+	list-style: none;
+}
+
+
+
+
+
+
+/*==================== FOOTER ======================*/
+footer{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;font: 12px/20px Arial, Helvetica, sans-serif;}
+footer {display:block;}
+
+footer {background-color:#333; margin-top:30px;}
+footer .wrap-footer{padding:10px 0px; color:#ffffff;}
+
+footer .box{}
+footer .heading{ padding:5px 0; border-bottom:1px solid #615E5F; border-top:1px solid #615E5F; text-align: center;}
+footer .heading h2{font-size:25px; font-weight:normal; display:inline;border-bottom: 2px solid #009FE3; border-top: 2px solid #009FE3; padding: 7px 0 8px 0; color:#FFF;}
+footer .content{padding:5px; font-size:13px;}
+footer .content ul{ font-size:14px;}
+footer .content ul li{padding:1px 0;}
+footer .content .tag a{padding: 10px; background: #009FE3; margin: 0px 5px 5px 0px; float: left; color:#ffffff; font-size:14px;}
+footer .content .tag a:hover{color: #ffffff; background: #4cc7fc;}
+
+.copyright{text-align:center; margin-top:20px; background: #171717; padding: 20px 0px; color:#ffffff;}
+.copyright a{color:#ffffff; text-decoration:underline; font-weight:bold;}
+
+
+
+/*==================== COLUMNS ======================*/

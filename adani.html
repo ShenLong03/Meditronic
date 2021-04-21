@@ -1,0 +1,404 @@
+
+<!DOCTYPE HTML>
+<head>
+<title>meditronic</title>
+
+<meta name="description" content="meditronic" />
+<meta name="keywords" content="meditronic" />
+<meta name="Subject" content="meditronic" />
+<meta name="abstract" content="meditronic" />
+
+<meta name="robots" content="index,follow" />
+<meta name="rating" content="GENERAL" />
+<meta name="distribution" content="GLOBAL" />
+
+<meta name="language" content="es" />
+<meta name="classification" content="medical" />
+
+<meta name="copyright" content="meditronic" />
+<meta name="author" content="meditronic" />
+<meta name="originatorjurisdiction" content="Costa Rica" />
+<meta name="revisit-after" content="1 days" />
+<meta name="expires" content="never" />
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/stilos.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+$('#slider').nivoSlider();
+});
+</script>
+    
+<!-- FILES OF GALLERY !-->
+<link rel="stylesheet" type="text/css" href="files_albumes/jGalleryTree.css">
+<script type="text/javascript" src="files_albumes/jquery.min.js"></script>
+<script type="text/javascript" src="files_albumes/jGalleryTree.js"></script>
+<!-- //FILES OF GALLERY !-->
+
+<!-- TABS -->
+<style>
+select{
+	width: 80%;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #fff;
+	font-size: 17px;
+	}
+</style>
+<script type="text/javascript">
+function tipoOnChange(sel) {
+      if (sel.value=="uno"){
+           divdr = document.getElementById("tab1");
+           divdr.style.display = "";
+
+           divprov = document.getElementById("tab2");
+           divprov.style.display = "none";
+		   
+		   divprov = document.getElementById("tab3");
+           divprov.style.display = "none";
+		   
+		   divdr = document.getElementById("tab4");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab5");
+           divdr.style.display="none";
+
+      }else if (sel.value=="dos"){
+
+           divdr = document.getElementById("tab1");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab3");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab4");
+           divdr.style.display="none";
+
+           divprov = document.getElementById("tab2");
+           divprov.style.display = "";
+		   
+		   divdr = document.getElementById("tab5");
+           divdr.style.display="none";
+		   
+      }else if (sel.value=="tres"){
+
+           divdr = document.getElementById("tab1");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab2");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab4");
+           divdr.style.display="none";
+
+           divprov = document.getElementById("tab3");
+           divprov.style.display = "";
+		   
+		   divdr = document.getElementById("tab5");
+           divdr.style.display="none";
+		   
+      }else if (sel.value=="cuatro"){
+
+           divdr = document.getElementById("tab1");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab2");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab3");
+           divdr.style.display="none";
+
+           divprov = document.getElementById("tab4");
+           divprov.style.display = "";
+		   
+		   divdr = document.getElementById("tab5");
+           divdr.style.display="none";
+		   
+      }else if (sel.value=="cinco"){
+
+           divdr = document.getElementById("tab1");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab2");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab3");
+           divdr.style.display="none";
+		   
+		   divdr = document.getElementById("tab4");
+           divdr.style.display="none";
+
+           divprov = document.getElementById("tab5");
+           divprov.style.display = "";
+      }
+}
+</script>
+<!-- TABS -->
+</head>
+<body>
+	      <div class="header">
+	      	<div class="header_top">
+			        <div class="wrap">
+					<div class="logo">
+					 <!-- Nombre -->
+    <div id="cont_nombre_emp">
+     <a href="en/adani.html"><img src="images/en.jpg"></a>
+    <a href="index.html"><img src="images/logo.png"></a>
+    </div>
+    <!-- fin nombre-->
+					</div>
+						 <div class="menu">
+						    <ul>
+								<li><a href="index.html">Nosotros</a></li>
+								<li><a href="servicios.html">Servicios</a></li>
+								<li class="active"><a href="galeria.html">Productos</a></li>
+                                
+								<li><a href="contacto.html">Contacto</a></li>
+								<div class="clear"></div>
+					        </ul>
+						</div>
+						<div class="clear"></div>
+				   </div>
+		      </div>
+	    </div>
+
+
+
+
+
+<div class="content_bottom_top">
+<a href="galeria.html"><img src="images/back.png" width="60px"></a>
+<h2>Productos Adani</h2>
+<h3>Seleccione una Categor&iacute;a</h3>
+
+<!-- -->
+<select class="form-control" onChange="tipoOnChange(this)">
+<option value="uno">Mamografía Digital HD</option>
+<option value="dos">Radiografía y Fluoroscopía</option>
+<option value="tres">Radiografía Torácica Digital</option>
+<option value="cuatro">Unidades Móviles en Vehículos</option>
+<option value="cinco">Terapia por Rayos X</option>
+</select>
+<!-- -->  
+
+</div>
+
+<center>
+<table width="80%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<div id="tab1" class="galleryContainer imagePortfolio">
+<ul class="gallery-grid column3 gridsInPlace">
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/mammoex480x469.png" alt="image">
+<span class="category-title">MAMMOEXPRESS</span>
+<a href="adani/mammoexpress.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/MAMMOSCAN_34+1.png" alt="image">
+<span class="category-title">MAMMOSCAN</span>
+<a href="adani/mammoscan.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+</ul>
+</div>
+
+<div id="tab2" class="galleryContainer imagePortfolio" style="display:none;">
+<ul class="gallery-grid column3 gridsInPlace">
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/ADANI_UNIEXPERT_2_PLUS_2.png" alt="image">
+<span class="category-title">UNIEXPERT 2 PLUS</span>
+<a href="adani/uniexpert-2plus.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/ADANI_UNIEXPERT_3_PLUS_new.png" alt="image">
+<span class="category-title">UNIEXPERT 3 PLUS</span>
+<a href="adani/uniexpert-3plus.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/1.png" alt="image">
+<span class="category-title">UNIOPTIMA</span>
+<a href="adani/unioptima.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/2.png" alt="image">
+<span class="category-title">UNIVERSAL</span>
+<a href="adani/universal.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/uniexpert.png" alt="image">
+<span class="category-title">UNIEXPERT</span>
+<a href="adani/uniexpert.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/5.png" alt="image">
+<span class="category-title">C-EXPERT</span>
+<a href="adani/c-expert.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/6.png" alt="image">
+<span class="category-title">UNICOMPACT</span>
+<a href="adani/unicompact.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+</ul>
+</div>
+
+<div id="tab3" class="galleryContainer imagePortfolio" style="display:none;">
+<ul class="gallery-grid column3 gridsInPlace">
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/PULMOSCAN_cabin_34.png" alt="image">
+<span class="category-title">PULMOSCAN cabin solution</span>
+<a href="adani/pulmoscan-cabin-solution.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/PULMOSCAN_34.png" alt="image">
+<span class="category-title">PULMOSCAN</span>
+<a href="adani/pulmoscan.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/PULMOEXPRESS_34.png" alt="image">
+<span class="category-title">PULMOEXPRESS</span>
+<a href="adani/pulmoexpress.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+</ul>
+</div>
+
+<div id="tab4" class="galleryContainer imagePortfolio" style="display:none;">
+<ul class="gallery-grid column3 gridsInPlace">
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/SE_RH.png" alt="image">
+<span class="category-title">SCREENEXPRESS / Reproductive Health</span>
+<a href="adani/screenexpress.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/mammoex480x469.png" alt="image">
+<span class="category-title">MAMMOEXPRESS</span>
+<a href="adani/mammoexpress.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/PULMOEXPRESS_34.png" alt="image">
+<span class="category-title">PULMOEXPRESS</span>
+<a href="adani/pulmoexpress.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+</ul>
+</div>
+
+<div id="tab5" class="galleryContainer imagePortfolio" style="display:none;">
+<ul class="gallery-grid column3 gridsInPlace">
+<li class="gallerygridsitems">
+<div class="child-container">
+<img src="images/adani/THERASCAN_cut_box_3d.png" alt="image">
+<span class="category-title">THERAD</span>
+<a href="adani/therad.html" class="open-gallery">Ver Detalles</a> <!-- BUTTON TO EXPAND SUB GALLERY -->
+</div>
+</li>
+</ul>
+</div>
+
+    </td>
+  </tr>
+</table>
+</center>
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+	<div class="wrap">
+	   <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+				    <div class="location">
+				    	<h3>Ubicaci&oacute;n</h3>
+				    	<ul>
+
+			    	  <li>Barreal de Heredia 200mts norte y 200 mts oeste de CENADA.</li>
+
+						 </ul>
+				    </div>
+				</div>
+				  <div class="col_1_of_4 span_1_of_4">
+					<h3>Siganos en</h3>
+					<p>
+                    <a href="https://www.facebook.com/meditroniccr/" target="_blank"><img src="images/facebook.png" style="border:none;"></a>
+                    </p>
+				  </div>
+				     <div class="col_1_of_4 span_1_of_4">
+						<h3>Facebook</h3>
+						<div class="Testimonials_desc">
+	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmeditroniccr%2F254403238041994?sk=timeline&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:290px;" allowTransparency="true"></iframe>
+
+				   </div>
+					</div>
+						<div class="col_1_of_4 span_1_of_4">
+							   <h3>Cont&aacute;ctenos</h3>
+							       <ul class="address">
+								  	 <li>info@meditroniccr.com</li>
+								  	 <li><span>Tel1:</span> +506 60457038</li>
+								  </ul>
+						  </div>
+					  </div>
+				</div>
+		  <div class="copy-right">
+			<div class="wrap">
+			 <p>Diseñado por  <a href="http://www.carvajalcostarica.com/" target="_blank" style="color:#FFFFFF; text-decoration:none;">CARVAJAL</a></p> <a href="login/" target="_blank"> <img src="images/candado.png" style="border:none"></a>
+		      <div class="clear"></div>
+		</div>
+	</div>
+ </div>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="fliplightbox.min.js"></script>
+<script type="text/javascript">$('body').flipLightBox()</script>
+</body>
+</html>
